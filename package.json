@@ -1,0 +1,42 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Techwiz project backend",
+  "license": "ISC",
+  "author": "MJ Dev",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js & cd frontend && npm run dev",
+    "start": "NODE_ENV=production node app.js",
+    "seed": "node src/scripts/seed.js",
+    "lint": "echo 'no lint configured'",
+    "test": "NODE_ENV=test mocha 'src/tests/**/*.test.js' --timeout 10000",
+    "test:watch": "NODE_ENV=test mocha 'src/tests/**/*.test.js' --watch --timeout 10000"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.8.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^7.0.6",
+    "pdf-lib": "^1.17.1",
+    "socket.io": "^4.8.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "chai": "^6.0.1",
+    "express-validator": "^7.2.1",
+    "mocha": "^11.7.2",
+    "sinon": "^21.0.0",
+    "supertest": "^7.1.4"
+  }
+}
